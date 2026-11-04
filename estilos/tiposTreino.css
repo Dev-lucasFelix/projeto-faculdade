@@ -1,0 +1,78 @@
+:root {
+    --fundo-principal: #FFFFFF;
+    --fundo-secundario: #E5EDFF;
+    --fundo-terciario: rgba(211, 211, 211, 0.205);
+    --botoes-links: #0066F5;
+    --botoes-hover: #0047B3;
+    --titulos-texto: #101828;
+}
+
+section.titulo{
+    padding: 20px;
+}
+
+h1.ponto{
+    display: list-item;
+    list-style-type: symbols("|");
+    list-style-position: inside;
+    
+}
+
+h1.ponto::marker{
+    color: blue;
+    font-weight: bolder;
+}
+
+.titulo p{
+    margin-top: 10px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+section.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 500px;
+    padding: 10px;
+}
+
+section.cards div{
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    width: 350px;
+}
+
+.cards > div > img{
+    background-color: lightgray;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+section.cards > div > article.texto{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+}
+
+article.texto h2{
+    padding: 10px;
+    font-size: 2em;
+}
+
+article.texto p{
+    font-size: 1.3em;
+}
+
+article.texto ul{
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 1.3em;
+}
+
+article.texto ul li::marker{
+    color: blue;
+}
