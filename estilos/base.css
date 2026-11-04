@@ -71,5 +71,5 @@ main{
     background-color: var(--fundo-terciario);
     width: 90%;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.135);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.145);
 }

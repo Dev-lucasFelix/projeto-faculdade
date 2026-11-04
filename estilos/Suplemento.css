@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root {
+    --fundo-principal: #FFFFFF;
+    --fundo-secundario: #E5EDFF;
+    --fundo-terciario: rgba(211, 211, 211, 0.205);
+    --botoes-links: #0066F5;
+    --botoes-hover: #0047B3;
+    --titulos-texto: #101828;
+}
+
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 300px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+.whey{
+    grid-area: 1 / 1 / 2 / span 2;
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px 10px 0 0;
+}
+
+.whey img{
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 0;
+}
+
+.whey > .texto{
+    padding: 15px 15px 15px 40px;
+    font-size: 1em;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.whey > .texto h2.ponto{
+    display: list-item;
+    list-style-type: "|";
+    list-style-position: inside;
+}
+
+.whey > .texto h2.ponto::marker{
+    color: blue;
+}
+
+.whey > .texto h2{
+    padding-bottom: 5px;
+}
+
+.whey > .texto ul{
+    padding-left: 30px;
+}
+
+.whey > .texto p{
+    padding-left: 20px;
+}
+/*----------------------------------------------------fim do whey-----------------------------------------------------*/
+
+.creatina{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: var(--fundo-secundario);
+}
+
+.creatina img{
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creatina > .texto{
+    padding: 10px;
+}
+
+.creatina > .texto h2.ponto{
+    display: list-item;
+    list-style-type: "|";
+    list-style-position: inside;
+}
+
+.creatina > .texto h2.ponto::marker{
+    color: blue;
+}
+
+.creatina > .texto ul{
+    padding: 20px;
+    line-height: 25px;
+}
+
+/*---------------------------fim da creatina--------------------------------------------------------------------------*/
+
+.pre-treino{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--fundo-secundario);
+}
+
+.pre-treino img{
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pre-treino > .texto{
+    padding: 10px;
+    font-size: .95em;
+    line-height: 23px;
+}
+
+.pre-treino > .texto h2.ponto{
+    display: list-item;
+    list-style-type: "|";
+    list-style-position: inside;
+}
+
+.pre-treino > .texto h2.ponto::marker{
+    color: blue;
+}
+
