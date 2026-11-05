@@ -71,5 +71,101 @@ main{
     background-color: var(--fundo-terciario);
     width: 90%;
     margin: auto;
+    margin-bottom: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.145);
+}
+
+
+/*--------------------------------------------------------------------------------*/
+/*-----------------------------------Fim do main---------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+    height: 250px;
+    background-color: #101828;
+    padding: 20px;
+    
+}
+
+section.intro {
+    width: 300px;
+    padding: 10px;
+}
+
+#haltere2{
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+section.intro h2{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+section.intro p{
+    color:  rgb(185, 182, 182);
+    margin: 5px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section.intro a{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.315);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+section.nav{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 300px;
+}
+
+section.nav h2{
+    color: white;
+}
+
+section.nav a{
+    color: rgb(185, 182, 182);
+    text-decoration: none;
+}
+
+section.nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+section.contato{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 300px;
+    border: 1px solid red;
+}
+
+section.contato h2{
+    color:  white;
+}
+
+section.contato p{
+    color:  rgb(185, 182, 182);
 }

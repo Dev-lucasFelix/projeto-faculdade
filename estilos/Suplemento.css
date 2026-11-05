@@ -13,7 +13,7 @@ main{
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 300px;
+    grid-template-rows: 1fr auto;
     border-radius: 10px 10px 0 0;
     margin-bottom: 20px;
 }
@@ -23,8 +23,13 @@ main{
     height: 400px;
     display: flex;
     flex-flow: row nowrap;
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-principal);
     border-radius: 10px 10px 0 0;
+    transition: height .3s ease;
+}
+
+.whey:hover{
+    height: 410px;
 }
 
 .whey img{
@@ -35,28 +40,33 @@ main{
     border-radius: 10px 0 0 0;
 }
 
-.whey > .texto{
-    padding: 15px 15px 15px 40px;
+ .texto{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
     font-size: 1em;
     line-height: 25px;
     text-align: justify;
 }
 
-.whey > .texto h2.ponto{
+ .texto h2.ponto{
     display: list-item;
     list-style-type: "|";
     list-style-position: inside;
 }
 
-.whey > .texto h2.ponto::marker{
+ .texto h2.ponto::marker{
     color: blue;
 }
 
-.whey > .texto h2{
+.texto h2{
     padding-bottom: 5px;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
 }
 
-.whey > .texto ul{
+.texto ul{
     padding-left: 30px;
 }
 
@@ -70,7 +80,13 @@ main{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-principal);
+    border-radius: 0 10px 0 0;
+    height: 400px;
+    transition: height .3s ease;
+}
+.creatina:hover{
+    height: 410px;
 }
 
 .creatina img{
@@ -78,20 +94,6 @@ main{
     width: 40%;
     height: 100%;
     object-fit: cover;
-}
-
-.creatina > .texto{
-    padding: 10px;
-}
-
-.creatina > .texto h2.ponto{
-    display: list-item;
-    list-style-type: "|";
-    list-style-position: inside;
-}
-
-.creatina > .texto h2.ponto::marker{
-    color: blue;
 }
 
 .creatina > .texto ul{
@@ -104,30 +106,23 @@ main{
 .pre-treino{
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
+    align-items: center;
     flex-flow: row nowrap;
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-principal);
+    border-radius: 10px 0 0 0;
+    height: 400px;
+    transition: height .3s ease;
+
+}
+.pre-treino:hover{
+    height: 410px;
 }
 
 .pre-treino img{
     display: block;
     width: 40%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
-}
-
-.pre-treino > .texto{
-    padding: 10px;
-    font-size: .95em;
-    line-height: 23px;
-}
-
-.pre-treino > .texto h2.ponto{
-    display: list-item;
-    list-style-type: "|";
-    list-style-position: inside;
-}
-
-.pre-treino > .texto h2.ponto::marker{
-    color: blue;
+    border-radius: 10px 0 0 0;
 }
 
