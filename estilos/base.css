@@ -82,7 +82,7 @@ main{
 
 footer{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: start;
     height: 250px;
@@ -159,7 +159,6 @@ section.contato{
     flex-flow: column nowrap;
     gap: 10px;
     width: 300px;
-    border: 1px solid red;
 }
 
 section.contato h2{
@@ -168,4 +167,37 @@ section.contato h2{
 
 section.contato p{
     color:  rgb(185, 182, 182);
+}
+
+section.contato > .email{
+    display: flex;
+    gap: 15px;
+}
+
+section.contato > .email > .campoTexto{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.281);
+}
+
+section.contato > .email > .butao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 3px;
+    width: 50px;    
+}
+
+.copyright {
+    flex: 0 0 100%;
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgb(185, 182, 182);
+    text-align: center;
 }
