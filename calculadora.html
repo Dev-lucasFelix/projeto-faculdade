@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use as calculadoras FitGuide para estimar seu IMC e uma dose diária de creatina baseada no peso.">
+    <title>Calculadoras | FitGuide</title>
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/calculadora.css">
+    <script src="https://kit.fontawesome.com/71d168b14c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=7PziSMxMPm19&format=png&color=000000" type="image/x-icon">
+    <script src="js/calculadora.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><i class="fa-solid fa-dumbbell" id="haltere"></i>FitGuide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Fitguide.html">Início</a></li>
+                <li><a href="tiposTreino.html">Tipos de treino</a></li>
+                <li><a href="suplemento.html">Suplementação</a></li>
+                <li><a href="calculadora.html" aria-current="page">Calculadora</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="botao">
+            <a href="#">Entrar</a>
+        </div>
+    </header>
+
+    <main class="pagina-calculadora">
+        <section class="titulo-calculadora">
+            <p class="etiqueta">Ferramentas FitGuide</p>
+            <h1>Conheça melhor o seu corpo.</h1>
+            <p>Faça uma estimativa do seu IMC e confira uma referência de ingestão diária de creatina.</p>
+        </section>
+
+        <section class="calculadoras" aria-label="Calculadoras de saúde e suplementação">
+            <article class="cartao-calculadora">
+                <div class="cabecalho-cartao">
+                    <span class="icone-cartao" aria-hidden="true"><i class="fa-solid fa-weight-scale"></i></span>
+                    <div>
+                        <p class="etiqueta">Saúde e composição corporal</p>
+                        <h2>Calculadora de IMC</h2>
+                    </div>
+                </div>
+                <p class="descricao-cartao">O Índice de Massa Corporal é uma estimativa calculada com seu peso e sua altura.</p>
+
+                <form id="form-imc" novalidate>
+                    <div class="campo">
+                        <label for="peso-imc">Peso <span>(kg)</span></label>
+                        <input id="peso-imc" name="peso" type="number" min="1" max="500" step="0.1" inputmode="decimal" placeholder="Ex.: 70" required>
+                    </div>
+                    <div class="campo">
+                        <label for="altura-imc">Altura <span>(cm)</span></label>
+                        <input id="altura-imc" name="altura" type="number" min="50" max="250" step="1" inputmode="decimal" placeholder="Ex.: 175" required>
+                    </div>
+                    <button class="botao-calcular" type="submit">Calcular IMC <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="resultado" id="resultado-imc" role="status" aria-live="polite" hidden></div>
+                <p class="nota">A classificação apresentada usa referências para adultos e não substitui uma avaliação de saúde.</p>
+            </article>
+
+            <article class="cartao-calculadora">
+                <div class="cabecalho-cartao">
+                    <span class="icone-cartao" aria-hidden="true"><i class="fa-solid fa-capsules"></i></span>
+                    <div>
+                        <p class="etiqueta">Suplementação</p>
+                        <h2>Creatina diária</h2>
+                    </div>
+                </div>
+                <p class="descricao-cartao">Veja uma estimativa de manutenção calculada a partir do seu peso corporal.</p>
+
+                <form id="form-creatina" novalidate>
+                    <div class="campo">
+                        <label for="peso-creatina">Peso <span>(kg)</span></label>
+                        <input id="peso-creatina" name="peso" type="number" min="1" max="500" step="0.1" inputmode="decimal" placeholder="Ex.: 70" required>
+                    </div>
+                    <button class="botao-calcular" type="submit">Calcular referência <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="resultado" id="resultado-creatina" role="status" aria-live="polite" hidden></div>
+                <p class="nota">Estimativa informativa de 0,03 g/kg por dia. A dose adequada pode variar; converse com um profissional de saúde antes de usar suplementos.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="intro">
+            <h2><i class="fa-solid fa-dumbbell" id="haltere2"></i>FitGuide</h2>
+            <p>Seu guia completo de treino, nutrição e bem-estar esportivo. Métodos de treinamento, calculadora interativa e orientações nutricionais válidas.</p>
+            <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            <a href="#"><i class="fa-solid fa-newspaper"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </section>
+
+        <section class="nav">
+            <h2>Navegação do Portal</h2>
+            <a href="Fitguide.html">Início</a>
+            <a href="tiposTreino.html">Tipos de treino</a>
+            <a href="suplemento.html">Suplementação</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="#">Contatos</a>
+        </section>
+
+        <section class="contato">
+            <h2>FitGuide Dispatch</h2>
+            <p>Receba artigos, estudos e protocolos de nutrição semanalmente no seu e-mail.</p>
+            <div class="email">
+                <input type="email" placeholder="Seu melhor email" class="campoTexto" aria-label="Seu melhor email">
+                <a href="#" class="butao" aria-label="Inscrever-se"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            </div>
+        </section>
+
+        <p class="copyright">&copy; 2026 FitGuide. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
